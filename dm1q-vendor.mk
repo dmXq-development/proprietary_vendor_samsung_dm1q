@@ -60,7 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dm1q/proprietary/vendor/firmware/hpnv21g.bb7:$(TARGET_COPY_OUT_VENDOR)/firmware/hpnv21g.bb7 \
     vendor/samsung/dm1q/proprietary/vendor/firmware/hpnv21g.bb9:$(TARGET_COPY_OUT_VENDOR)/firmware/hpnv21g.bb9 \
     vendor/samsung/dm1q/proprietary/vendor/firmware/hpnv21g.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hpnv21g.bin \
-    vendor/samsung/dm1q/proprietary/vendor/firmware/mfc/mfc_fw_flash_cps4038.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc/mfc_fw_flash_cps4038.bin \
     vendor/samsung/dm1q/proprietary/vendor/firmware/ois_mcu_stm32g_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_mcu_stm32g_fw.bin \
     vendor/samsung/dm1q/proprietary/vendor/firmware/qca6490/amss20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/amss20.bin \
     vendor/samsung/dm1q/proprietary/vendor/firmware/qca6490/bdwlan.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/bdwlan.elf \
@@ -83,9 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_sony_imx564.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_sony_imx564.bin \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.3_lsi_s5k3k1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.3_lsi_s5k3k1.bin \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3k1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3k1.bin \
-    vendor/samsung/dm1q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5kgn3.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5kgn3.bin \
-    vendor/samsung/dm1q/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx564.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx564.bin \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/t_t10_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/t_t10_dual_calibration.bin \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/uw_dual_calibration.bin \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/w_dual_calibration.bin
