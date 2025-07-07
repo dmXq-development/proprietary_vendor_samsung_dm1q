@@ -135,9 +135,9 @@
 		<Changes>
 			<!-- Hexadecimal value/ 0.25dBm unit  0x50 : 20dBm, 0x28: 10dBm  -->
 			<Changes0 value="0x50"/>
-			<Changes1 value="0x3c"/>
-			<Changes2 value="0x50"/>
-			<Changes3 value="0x50"/>			
+			<Changes1 value="0x2e"/>
+			<Changes2 value="0x3c"/>
+			<Changes3 value="0x3c"/>			
 		</Changes>
 	</Tag204>
 </Tag>
