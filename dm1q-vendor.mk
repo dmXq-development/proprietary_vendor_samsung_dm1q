@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dm1q/proprietary/vendor/etc/sensors/config/kailua_lsm6dso_0_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_lsm6dso_0_1.json \
     vendor/samsung/dm1q/proprietary/vendor/etc/sensors/config/kailua_stk3a9x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kailua_stk3a9x_0.json \
     vendor/samsung/dm1q/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
+    vendor/samsung/dm1q/proprietary/vendor/etc/situation_audio_policy_volumes_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/situation_audio_policy_volumes_sec.xml \
     vendor/samsung/dm1q/proprietary/vendor/firmware/CAMERA_ICP.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b20 \
     vendor/samsung/dm1q/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
     vendor/samsung/dm1q/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
@@ -49,6 +50,24 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dm1q/proprietary/vendor/firmware/a740_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mdt \
     vendor/samsung/dm1q/proprietary/vendor/firmware/bt_nvm_loading.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/bt_nvm_loading.xml \
     vendor/samsung/dm1q/proprietary/vendor/firmware/bt_nvm_loading_2nd.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/bt_nvm_loading_2nd.xml \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs35l43-bot-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-bot-dsp1-spk-prot.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs35l43-bot-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-bot-dsp1-spk-prot.wmfw \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs35l43-rcv-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-rcv-dsp1-spk-prot.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs35l43-rcv-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l43-rcv-dsp1-spk-prot.wmfw \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-a2h.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-a2h.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-calib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-calib.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-calib.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-calib.wmfw \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-dvl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-dvl.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-svc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-svc1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc1.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-svc2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc2.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-svc3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-svc3.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-wt1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-wt1.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-wt2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-wt2.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26-wt3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26-wt3.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/cs40l26.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l26.wmfw \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
     vendor/samsung/dm1q/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
     vendor/samsung/dm1q/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
     vendor/samsung/dm1q/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
@@ -209,6 +228,8 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.statsregeneration \
     com.qti.feature2.stub \
     com.qti.feature2.swmf \
+    com.qti.settings.sm8550 \
+    com.qti.stats.common \
     com.qualcomm.mcx.distortionmapper \
     com.qualcomm.mcx.linearmapper \
     com.qualcomm.mcx.nonlinearmapper \
@@ -227,11 +248,18 @@ PRODUCT_PACKAGES += \
     libcamxswispiqmodule \
     libchifeature2 \
     libcom.qti.chinodeutils \
+    libhypermotion_interface \
     libthirdparty_zoomtranslator_imp \
     libtriplecam_image_optical_zoom \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
+    libvdis.uniplugin@1.0 \
     sensors.flicker \
     sensors.grip \
     sensors.ssc \
-    factory.ssc
+    libaudiosaplus_sec \
+    libsamsungSoundbooster_plus \
+    libswdap \
+    libswspatializer \
+    factory.ssc \
+    vendor.samsung.hardware.thermal@1.0-service
