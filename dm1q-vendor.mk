@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dm1q/proprietary/vendor/etc/display/qdcm_calib_data_DM1_LX83118_CM002.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_DM1_LX83118_CM002.json \
     vendor/samsung/dm1q/proprietary/vendor/etc/display/qdcm_calib_data_DM1_S6E3FAC_AMB606AW01.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_DM1_S6E3FAC_AMB606AW01.json \
     vendor/samsung/dm1q/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/samsung/dm1q/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/samsung/dm1q/proprietary/vendor/etc/init/init.vendor.onebinary.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.onebinary.rc \
     vendor/samsung/dm1q/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/dm1q/proprietary/vendor/etc/init/vendor.samsung.rilchip.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.qcom.rc \
@@ -116,6 +117,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     SWPD_libTsAf_3K1_TELE \
+    btaudio_offload_if \
     com.samsung.ois.mcu_stm32g \
     com.samsung.sensor.hi1337 \
     com.samsung.sensor.hi847 \
@@ -236,12 +238,26 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.xr \
     com.qualcomm.qti.mcx.usecase.extension \
+    android.hardware.bluetooth.audio-impl-qti \
+    android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.bluetooth@1.1-impl-qti \
     camera.qcom \
     com.qti.chi.offline \
     com.qti.chi.override \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.bttpi-impl \
     libTsAf_DM123Q \
     libTsAwbFront_DM2 \
     libTsAwb_DM2 \
+    libbluetooth_audio_session_aidl_qti \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
+    libbt-hidlclient \
+    libbtnv \
     libcamerapostproc \
     libcamxexternalformatutils \
     libcamximageformatutils \
@@ -249,6 +265,8 @@ PRODUCT_PACKAGES += \
     libchifeature2 \
     libcom.qti.chinodeutils \
     libhypermotion_interface \
+    libsehbluetooth_audio_session_aidl \
+    libsoc_helper \
     libthirdparty_zoomtranslator_imp \
     libtriplecam_image_optical_zoom \
     libtriplecam_optical_zoom_control \
@@ -261,5 +279,16 @@ PRODUCT_PACKAGES += \
     libsamsungSoundbooster_plus \
     libswdap \
     libswspatializer \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
+    vendor.qti.hardware.bttpi-V2-ndk \
+    vendor.qti.hardware.fm@1.0_vendor \
+    vendor.samsung.hardware.bluetooth.a2dpsink@1.0 \
+    vendor.samsung.hardware.bluetooth.audio-V1-ndk \
+    vendor.samsung.hardware.bluetooth.audio-impl \
+    vendor.samsung.hardware.bluetooth@2.0 \
+    bttpi-saidl.xml \
     factory.ssc \
-    vendor.samsung.hardware.thermal@1.0-service
+    android.hardware.bluetooth@1.1-service-qti \
+    vendor.samsung.hardware.thermal@1.0-service \
+    qms
