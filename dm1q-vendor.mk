@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dm1q/proprietary/vendor/etc/audconf/OPEN/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/acdb_cal.acdb \
     vendor/samsung/dm1q/proprietary/vendor/etc/audconf/OPEN/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFileXml.qwsp \
     vendor/samsung/dm1q/proprietary/vendor/etc/audio/sku_kalama/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths.xml \
+    vendor/samsung/dm1q/proprietary/vendor/etc/audio_effects_haptic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_haptic.xml \
     vendor/samsung/dm1q/proprietary/vendor/etc/display/qdcm_calib_data_DM1_LX83118_CM002.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_DM1_LX83118_CM002.json \
     vendor/samsung/dm1q/proprietary/vendor/etc/display/qdcm_calib_data_DM1_S6E3FAC_AMB606AW01.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_DM1_S6E3FAC_AMB606AW01.json \
     vendor/samsung/dm1q/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
@@ -303,11 +304,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.bttpi-impl \
+    libSWNDFilterPreview.camera.samsung \
     libTsAf_DM123Q \
     libTsAwbFront_DM2 \
     libTsAwb_DM2 \
+    libUniScaler.uniplugin@1.0 \
     lib_SamsungRec_08020 \
     lib_SoundAlive_play_plus_ver800 \
+    lib_lvacfs \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -320,6 +324,7 @@ PRODUCT_PACKAGES += \
     libchifeature2 \
     libcom.qti.chinodeutils \
     libhypermotion_interface \
+    libndfilter_preview.uniplugin@1.0 \
     libsehbluetooth_audio_session_aidl \
     libsoc_helper \
     libthirdparty_zoomtranslator_imp \
