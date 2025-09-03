@@ -142,7 +142,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/dm1q/proprietary/vendor/firmware/qca6490/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6490/regdb.bin \
     vendor/samsung/dm1q/proprietary/vendor/firmware/tsp_stm/fts2ba61y_dm1q.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_stm/fts2ba61y_dm1q.bin \
     vendor/samsung/dm1q/proprietary/vendor/firmware/tsp_stm/fts2ba61y_dm1q_boe.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_stm/fts2ba61y_dm1q_boe.bin \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
     vendor/samsung/dm1q/proprietary/vendor/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/vpu30_4v_16mb.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v_16mb.mbn \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/vpu30_4v_16mb_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v_16mb_unsigned.mbn \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/vpu30_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v_unsigned.mbn \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
+    vendor/samsung/dm1q/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgn3.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgn3.bin \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3lu_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3lu_full.bin \
     vendor/samsung/dm1q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3lu.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3lu.bin \
